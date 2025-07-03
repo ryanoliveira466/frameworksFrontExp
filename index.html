@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/usa.png" id="favicon">
+    <title>Background Image/Frameworks</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Dark and Light mode -->
+    <button class="btn btn-primary position-fixed bottom-0 z-2 end-0 m-2 p-2" id="themeToggleBtn" title="Toggle theme">
+        <i class="bi bi-circle-half fs-5"></i>
+    </button>
+
+    <!-- Side Panel -->
+    <div id="sidePanel"
+        class="position-fixed top-0 start-0 w-100 z-1 vh-100 bg-dark text-white d-flex justify-content-center align-items-center">
+        <button id="closeBtn" class="btn btn-light position-absolute top-0 end-0 m-3 fs-3">&times;</button>
+    </div>
+
+
+
+
+
+    <main>
+        <!-- #Image1 -->
+        <!-- Set DIV with 100vh -->
+        <section>
+            <article>
+                <div id="image" class="d-flex vh-100 z-1">
+                    <nav class="navbar bg-body-tertiary">
+                        <div class="container-fluid">
+                            <a class="navbar-brand m-1" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-apple-music" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="m10.995 0 .573.001q.241 0 .483.007c.35.01.705.03 1.051.093.352.063.68.166.999.329a3.36 3.36 0 0 1 1.47 1.468c.162.32.265.648.328 1 .063.347.084.7.093 1.051q.007.241.007.483l.001.573v5.99l-.001.573q0 .241-.008.483c-.01.35-.03.704-.092 1.05a3.5 3.5 0 0 1-.33 1 3.36 3.36 0 0 1-1.468 1.468 3.5 3.5 0 0 1-1 .33 7 7 0 0 1-1.05.092q-.241.007-.483.008l-.573.001h-5.99l-.573-.001q-.241 0-.483-.008a7 7 0 0 1-1.052-.092 3.6 3.6 0 0 1-.998-.33 3.36 3.36 0 0 1-1.47-1.468 3.6 3.6 0 0 1-.328-1 7 7 0 0 1-.093-1.05Q.002 11.81 0 11.568V5.005l.001-.573q0-.241.007-.483c.01-.35.03-.704.093-1.05a3.6 3.6 0 0 1 .329-1A3.36 3.36 0 0 1 1.9.431 3.5 3.5 0 0 1 2.896.1 7 7 0 0 1 3.95.008Q4.19.002 4.432 0h.573zm-.107 2.518-4.756.959H6.13a.66.66 0 0 0-.296.133.5.5 0 0 0-.16.31c-.004.027-.01.08-.01.16v5.952c0 .14-.012.275-.106.39-.095.115-.21.15-.347.177l-.31.063c-.393.08-.65.133-.881.223a1.4 1.4 0 0 0-.519.333 1.25 1.25 0 0 0-.332.995c.031.297.166.582.395.792.156.142.35.25.578.296.236.047.49.031.858-.043.196-.04.38-.102.555-.205a1.4 1.4 0 0 0 .438-.405 1.5 1.5 0 0 0 .233-.55c.042-.202.052-.386.052-.588V6.347c0-.276.08-.35.302-.404.024-.005 3.954-.797 4.138-.833.257-.049.378.025.378.294v3.524c0 .14-.001.28-.096.396-.094.115-.211.15-.348.178l-.31.062c-.393.08-.649.133-.88.223a1.4 1.4 0 0 0-.52.334 1.26 1.26 0 0 0-.34.994c.03.297.174.582.404.792a1.2 1.2 0 0 0 .577.294c.237.048.49.03.858-.044.197-.04.381-.098.556-.202a1.4 1.4 0 0 0 .438-.405q.173-.252.233-.549a2.7 2.7 0 0 0 .044-.589V2.865c0-.273-.143-.443-.4-.42-.04.003-.383.064-.424.073" />
+                                </svg>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </article>
+        </section>
+
+        <!-- Then after the div 100vh, we have this section -->
+        <section class="border-bottom">
+            <article>
+                <div class="container px-4 py-5" id="custom-cards">
+                    <h2 class="pb-2 border-bottom">Favorite singers</h2>
+                    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                        <div class="col">
+                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                                name="peep" set="artist" style="background-image: url('images/peep-6.webp');">
+                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Gustav Elijah Åhr</h3>
+                                    <ul class="d-flex list-unstyled mt-auto">
+                                        <li class="me-auto"> <img src="images/usa.png" alt="Bootstrap" width="32"
+                                                height="32" class="rounded-circle border border-white"> </li>
+                                        <li class="d-flex align-items-center me-3"> <svg class="bi me-2" width="1em"
+                                                height="1em" role="img" aria-label="Location">
+                                                <use xlink:href="#geo-fill"></use>
+                                            </svg> <small class="text-shadow-1">Allentown, Pensilvânia</small> </li>
+                                        <li class="d-flex align-items-center"> <svg class="bi me-2" width="1em"
+                                                height="1em" role="img" aria-label="Duration">
+                                                <use xlink:href="#calendar3"></use>
+                                            </svg> <small></small> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" name="x"
+                                set="artist" style="background-image: url('images/x-3.jpg');">
+                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Jahseh Dwayne Ricardo Onfroy</h3>
+                                    <ul class="d-flex list-unstyled mt-auto">
+                                        <li class="me-auto"> <img src="images/usa.png" alt="Bootstrap" width="32"
+                                                height="32" class="rounded-circle border border-white"> </li>
+                                        <li class="d-flex align-items-center me-3"> <svg class="bi me-2" width="1em"
+                                                height="1em" role="img" aria-label="Location">
+                                                <use xlink:href="#geo-fill"></use>
+                                            </svg> <small class="text-shadow-1">Plantation, Flórida</small> </li>
+                                        <li class="d-flex align-items-center"> <svg class="bi me-2" width="1em"
+                                                height="1em" role="img" aria-label="Duration">
+                                                <use xlink:href="#calendar3"></use>
+                                            </svg> <small></small> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                                name="jarad" set="artist" style="background-image: url('images/juiceewrld.jpeg');">
+                                <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Jarad Anthony Higgins
+                                    </h3>
+                                    <ul class="d-flex list-unstyled mt-auto">
+                                        <li class="me-auto"> <img src="images/usa.png" alt="Bootstrap" width="32"
+                                                height="32" class="rounded-circle border border-white"> </li>
+                                        <li class="d-flex align-items-center me-3"> <svg class="bi me-2" width="1em"
+                                                height="1em" role="img" aria-label="Location">
+                                                <use xlink:href="#geo-fill"></use>
+                                            </svg> <small class="text-shadow-1">Chicago, Illinois</small> </li>
+                                        <li class="d-flex align-items-center"> <svg class="bi me-2" width="1em"
+                                                height="1em" role="img" aria-label="Duration">
+                                                <use xlink:href="#calendar3"></use>
+                                            </svg> <small></small> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Frameworks used -->
+        <section class="border-bottom">
+            <article>
+                <div class="container px-4 py-5" id="custom-cards">
+                    <h2 class="pb-2 border-bottom">Frameworks used</h2>
+                    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                        <div class="col">
+                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                                name="gsap" set="framework" 
+                                style="background-image: url('images/gsap.jpg');">
+                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
+                                    <ul class="d-flex list-unstyled mt-auto">
+                                        <li class="me-auto"></li>
+                                        <li class="d-flex align-items-center me-3"> <svg class="bi me-2" width="1em"
+                                                height="1em" role="img" aria-label="Location">
+                                                <use xlink:href="#geo-fill"></use>
+                                            </svg> <small class="text-shadow-1"></small> </li>
+                                        <li class="d-flex align-items-center"> <svg class="bi me-2" width="1em"
+                                                height="1em" role="img" aria-label="Duration">
+                                                <use xlink:href="#calendar3"></use>
+                                            </svg> <small></small> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                                name="bootstrap" set="framework"
+                                style="background-image: url('images/bootstrap.jpg');">
+                                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold"></h3>
+                                    <ul class="d-flex list-unstyled mt-auto">
+                                        <li class="me-auto"></li>
+                                        <li class="d-flex align-items-center me-3"> <svg class="bi me-2" width="1em"
+                                                height="1em" role="img" aria-label="Location">
+                                                <use xlink:href="#geo-fill"></use>
+                                            </svg> <small class="text-shadow-1"></small> </li>
+                                        <li class="d-flex align-items-center"> <svg class="bi me-2" width="1em"
+                                                height="1em" role="img" aria-label="Duration">
+                                                <use xlink:href="#calendar3"></use>
+                                            </svg> <small></small> </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Finally after the section, we have div 100vh again, cool effects -->
+        <!-- #Image2 -->
+        <!-- <section>
+            <article>
+                <div id="image2" class="d-flex vh-100 z-1">
+                    <nav class="navbar sticky-top bg-body-tertiary">
+                        <div class="container-fluid">
+                            <a class="navbar-brand m-1" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                    class="bi bi-apple-music" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="m10.995 0 .573.001q.241 0 .483.007c.35.01.705.03 1.051.093.352.063.68.166.999.329a3.36 3.36 0 0 1 1.47 1.468c.162.32.265.648.328 1 .063.347.084.7.093 1.051q.007.241.007.483l.001.573v5.99l-.001.573q0 .241-.008.483c-.01.35-.03.704-.092 1.05a3.5 3.5 0 0 1-.33 1 3.36 3.36 0 0 1-1.468 1.468 3.5 3.5 0 0 1-1 .33 7 7 0 0 1-1.05.092q-.241.007-.483.008l-.573.001h-5.99l-.573-.001q-.241 0-.483-.008a7 7 0 0 1-1.052-.092 3.6 3.6 0 0 1-.998-.33 3.36 3.36 0 0 1-1.47-1.468 3.6 3.6 0 0 1-.328-1 7 7 0 0 1-.093-1.05Q.002 11.81 0 11.568V5.005l.001-.573q0-.241.007-.483c.01-.35.03-.704.093-1.05a3.6 3.6 0 0 1 .329-1A3.36 3.36 0 0 1 1.9.431 3.5 3.5 0 0 1 2.896.1 7 7 0 0 1 3.95.008Q4.19.002 4.432 0h.573zm-.107 2.518-4.756.959H6.13a.66.66 0 0 0-.296.133.5.5 0 0 0-.16.31c-.004.027-.01.08-.01.16v5.952c0 .14-.012.275-.106.39-.095.115-.21.15-.347.177l-.31.063c-.393.08-.65.133-.881.223a1.4 1.4 0 0 0-.519.333 1.25 1.25 0 0 0-.332.995c.031.297.166.582.395.792.156.142.35.25.578.296.236.047.49.031.858-.043.196-.04.38-.102.555-.205a1.4 1.4 0 0 0 .438-.405 1.5 1.5 0 0 0 .233-.55c.042-.202.052-.386.052-.588V6.347c0-.276.08-.35.302-.404.024-.005 3.954-.797 4.138-.833.257-.049.378.025.378.294v3.524c0 .14-.001.28-.096.396-.094.115-.211.15-.348.178l-.31.062c-.393.08-.649.133-.88.223a1.4 1.4 0 0 0-.52.334 1.26 1.26 0 0 0-.34.994c.03.297.174.582.404.792a1.2 1.2 0 0 0 .577.294c.237.048.49.03.858-.044.197-.04.381-.098.556-.202a1.4 1.4 0 0 0 .438-.405q.173-.252.233-.549a2.7 2.7 0 0 0 .044-.589V2.865c0-.273-.143-.443-.4-.42-.04.003-.383.064-.424.073" />
+                                </svg>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </article>
+        </section> -->
+    </main>
+
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+            <div class="col mb-3"> <a href="/"
+                    class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none"
+                    aria-label="Bootstrap"> <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg> </a>
+                <p class="text-body-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                        class="bi bi-apple-music" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="m10.995 0 .573.001q.241 0 .483.007c.35.01.705.03 1.051.093.352.063.68.166.999.329a3.36 3.36 0 0 1 1.47 1.468c.162.32.265.648.328 1 .063.347.084.7.093 1.051q.007.241.007.483l.001.573v5.99l-.001.573q0 .241-.008.483c-.01.35-.03.704-.092 1.05a3.5 3.5 0 0 1-.33 1 3.36 3.36 0 0 1-1.468 1.468 3.5 3.5 0 0 1-1 .33 7 7 0 0 1-1.05.092q-.241.007-.483.008l-.573.001h-5.99l-.573-.001q-.241 0-.483-.008a7 7 0 0 1-1.052-.092 3.6 3.6 0 0 1-.998-.33 3.36 3.36 0 0 1-1.47-1.468 3.6 3.6 0 0 1-.328-1 7 7 0 0 1-.093-1.05Q.002 11.81 0 11.568V5.005l.001-.573q0-.241.007-.483c.01-.35.03-.704.093-1.05a3.6 3.6 0 0 1 .329-1A3.36 3.36 0 0 1 1.9.431 3.5 3.5 0 0 1 2.896.1 7 7 0 0 1 3.95.008Q4.19.002 4.432 0h.573zm-.107 2.518-4.756.959H6.13a.66.66 0 0 0-.296.133.5.5 0 0 0-.16.31c-.004.027-.01.08-.01.16v5.952c0 .14-.012.275-.106.39-.095.115-.21.15-.347.177l-.31.063c-.393.08-.65.133-.881.223a1.4 1.4 0 0 0-.519.333 1.25 1.25 0 0 0-.332.995c.031.297.166.582.395.792.156.142.35.25.578.296.236.047.49.031.858-.043.196-.04.38-.102.555-.205a1.4 1.4 0 0 0 .438-.405 1.5 1.5 0 0 0 .233-.55c.042-.202.052-.386.052-.588V6.347c0-.276.08-.35.302-.404.024-.005 3.954-.797 4.138-.833.257-.049.378.025.378.294v3.524c0 .14-.001.28-.096.396-.094.115-.211.15-.348.178l-.31.062c-.393.08-.649.133-.88.223a1.4 1.4 0 0 0-.52.334 1.26 1.26 0 0 0-.34.994c.03.297.174.582.404.792a1.2 1.2 0 0 0 .577.294c.237.048.49.03.858-.044.197-.04.381-.098.556-.202a1.4 1.4 0 0 0 .438-.405q.173-.252.233-.549a2.7 2.7 0 0 0 .044-.589V2.865c0-.273-.143-.443-.4-.42-.04.003-.383.064-.424.073" />
+                    </svg>
+                    © 2025
+                </p>
+            </div>
+            <div class="col mb-3"></div>
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+            </div>
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+            </div>
+            <div class="col mb-3">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+</body>
+
+</html>
