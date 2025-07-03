@@ -1,3 +1,5 @@
+Claro! Abaixo está um **README.md** simples e direto explicando **o que são** e **para que servem** os frameworks **Bootstrap** e **GSAP**, sem instruções de uso nem exemplos de código.
+
 ---
 
 # 📚 Sobre Bootstrap e GSAP
@@ -44,3 +46,6 @@ GSAP é usado amplamente em sites interativos, experiências imersivas e animaç
 Ambos podem ser usados juntos para criar interfaces visualmente atrativas, modernas e interativas.
 
 ---
+
+Se quiser, posso adicionar imagens, diagramas ou versões em inglês. Deseja isso?
+
