@@ -2,7 +2,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //Hover card GSAP
     const cards = document.querySelectorAll('.card-cover');
-    const linkImage = 'http://localhost:5500/images/cover-hd/'
 
     cards.forEach(card => {
         card.addEventListener('mouseenter', () => {
@@ -37,8 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     cards.forEach(card => {
         card.addEventListener('click', async () => {
-            const name = card.getAttribute('name');
-            const imageUrl = `${linkImage}${name}_hd.jpg`;
+            const imageUrl = card.getAttribute('hd');
             const backgroundImage = `url("${imageUrl}")`;
 
             try {
