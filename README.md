@@ -1,4 +1,4 @@
-Claro! Abaixo está um **README.md** simples e direto explicando **o que são** e **para que servem** os frameworks **Bootstrap** e **GSAP**, sem instruções de uso nem exemplos de código.
+
 
 ---
 
@@ -47,5 +47,5 @@ Ambos podem ser usados juntos para criar interfaces visualmente atrativas, moder
 
 ---
 
-Se quiser, posso adicionar imagens, diagramas ou versões em inglês. Deseja isso?
+
 
